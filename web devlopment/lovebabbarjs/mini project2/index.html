@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="main.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body >
+    <div id="main" 
+      class=" flex flex-col lg:flex-row w-[103%]  items-center justify-center lg:overflow-x-hidden overflow-y-hidden h-[1300px] bg-black lg:h-[110vh] " 
+    >
+    <h1 class="text-white font-extrabold my-[30%] text-[30px] absolute top-[240px] lg:-top-[40%]" >My Contact Details </h1>
+      <div
+        class= "Left lg:upper bg-orange-400 rounded-full h-[160px] w-[160px] absolute lg:left-[30%] lg:top-[16%]  blur z-30 "
+      ></div>
+      <div id="content"
+        class=" h-[400px] w-[400px] border rounded-md border-slate-400 bg-[white]/10 flex flex-col items-center justify-center gap-8 z-40  backdrop-blur-[40px] 
+                        " 
+      >
+        <img
+          src="./0E8D71DF-0837-43AE-9B50-9EA0A0F356DB_1_201_a.jpeg "
+          alt=""
+          class="w-[35%] h-[35%] rounded-full "
+        />
+        <h2 class="text-white font-extrabold text-[20px]">Pranav Kumar</h2>
+        <h3 class="text-gray-400 font-bold text-[15px]">
+          MCA, Chandigarh University
+        </h3>
+        <div class="flex space-x-2">
+          <button
+            class="border-2 text-white py-2 px-3 text-[12px] rounded-md transition-all duration-200 hover: hover:bg-blue-100 hover:text-black group"
+             onclick="activate()"
+          >
+            <span class="text-white mr-1" 
+              ><i class="fa fa-light fa-share transition-all duration-200 group-hover:text-black"></i
+            ></span>
+            Share My Profile</button
+          >
+          <button
+            class="border-2 text-white py-2 px-10 text-[12px] rounded-md transition-all duration-200 hover: hover:bg-blue-100 hover:text-black "
+            href="www.linkedin.com/in/pranav-kumar-64b67625b"
+            >Follow me</button
+          >
+        </div>
+      </div>
+      <div
+        class="Right lg:lower bg-blue-600 rounded-full h-[200px] w-[200px] absolute right-[30%] bottom-[10%] blur border-2 z-30"
+      ></div>
+    </div>
+
+
+    <!-- Modal box -->
+    <div
+      class=" modal  lg:max-h-[170px] w-[450px] lg:max-w-[63vh] border deactive flex flex-col py-4 absolute space-y-2 top-[50%] right-[5.5%] lg:top-[35%] lg:right-[61vh] px-3  z-40 rounded-md backdrop-blur-[15px]"
+    >
+    <div class="flex justify-between mdl pb-3 px-2">
+      <h1 class="text-white font-extrabold text-[20px]">Share My Profile</h1>
+      <i class="fa fa-close text-gray-300 transition-all duration-200 hover:text-white text-[20px] pt-2" onclick="deactivate()"></i>
+    </div>
+      
+      <h3 class="text-gray-200 font-bold text-[15px] px-[2%] ">
+        Share this via
+      </h3>
+      <div class="flex  space-x-[8%] py-1 lg:space-x-[7%] lg:px-[10px] justify-center z-100">
+        <div class="flex  border rounded-full  transition-all duration-200 hover:text-white transition-all duration-200 hover:bg-blue-600 w-[50px]  h-[50px]  justify-center items-center border-blue-600 text-blue-600">
+            <a href="https://www.facebook.com/profile.php?id=100009106411430"> <i
+                class="fa fa-brands fa-facebook-f "
+              ></i></a>
+         
+        </div>
+        <div class="border rounded-full text-rose-600 border-rose-600 w-[50px] h-[50px] flex justify-center items-center transition-all duration-200 hover:bg-rose-600 transition-all duration-200 hover:text-white">
+         <a href="https://www.instagram.com/d_bharadwaj_174?igsh=MXdtd2hrOXZtMHZ5MQ=="> <i
+            class="fa fa-brands fa-instagram "
+          ></i></a>
+        </div>
+        <div class="border rounded-full text-blue-500 border-blue-500 w-[50px] h-[50px]  flex justify-center items-center transition-all duration-200 hover:bg-blue-600 transition-all duration-200 hover:text-white">
+         <a href=""> <i
+            class="fa fa-brands fa-twitter "
+          ></i></a>
+        </div>
+        <div class="border rounded-full text-green-600 border-green-600 w-[50px] h-[50px]  flex justify-center items-center transition-all duration-200 hover:bg-green-600 transition-all duration-200 hover:text-white">
+         <a href=""><i
+            class="fa fa-brands fa-whatsapp "
+          ></i></a> 
+        </div>
+        <div class="border rounded-full text-blue-500 w-[50px] h-[50px] transition-all duration-200 hover:bg-blue-500 transition-all duration-200 hover:text-white border-blue-500  flex justify-center items-center">
+        <a href="https://www.linkedin.com/in/pranav-kumar-64b67625b"><i
+            class="fa fa-brands fa-linkedin "
+          ></i></a> 
+        </div>
+      </div>
+    </div>
+
+    <div id="over"
+    class="overlay"></div>
+
+    <script src="file.js"></script>
+  </body>
+</html>

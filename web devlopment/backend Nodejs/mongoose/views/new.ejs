@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New</title>
+</head>
+<body>
+    <h1>You are about to insert new data</h1>
+
+    <form method="post" action="/product/new">
+        <label for="img">Image String :</label>
+        <input type="text"  style="width:400px" id="img" name="images" ><br>
+        <label for="b">Brand :</label>
+        <input name="brand" type="text">  <br>
+        <label  for="t">Title :</label>
+        <input name="title" type="text" id="t"> <br>
+        <label for="ds"> Description :</label>
+        <textarea name="description" id="ds" rows="5" cols="30"></textarea> <br>
+        <label for="p">Price :</label>
+        <input type="text" id="p" name="price"> <br>
+        <label for="dp">Discount</label>
+        <input type="text" id="dp" name="discountPercentage"> <br>
+        <label for="r">Rating</label>
+        <input type="text" name="rating"> <br>
+
+        <button>Submit Changes</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,87 @@
+h1{
+    color:#b92b27;
+}
+h3{
+    color:purple;
+}
+*{
+    font-family:'Courier New', Courier, monospace
+}
+#signup{
+    background-color:#b92b27;
+    color:white;
+}
+.up{
+    background-color:green;
+    color:white;
+}
+
+/* descendent selector */
+p a{
+    color:purple;
+    background-color:yellow;
+}
+/* nav ul li a{
+    color:hotpink;
+} */
+/* this can be also used for same styling . ye v same apply hoga isme leve;s skip kr ke kr skte hai */
+nav a{
+    color:hotpink;
+}
+
+/* siblng combinator */
+p+h3{
+    text-decoration:underline;
+}
+
+.up+button{
+    background-color:aqua;
+
+}
+
+/* child combinator */
+div > input{
+    background-color:black;
+    color:white;
+}
+
+/* attribute selector */
+input[type='text']{
+    color:cadetblue;
+}
+
+input[type='password']{
+    color:gold;
+}
+
+/* pseudo class selector */
+button:hover{
+    background-color:black;
+    color:white;
+}
+h3:hover{
+    text-decoration:none;
+}
+
+button:active{
+    background-color:pink;
+}
+p:active{
+    font-weight:bold;
+    color:green;
+}
+
+input[type=radio]:checked + label{
+    color:red;
+    font-weight:bold;
+}
+div:nth-of-type(3){
+background:magenta;
+
+}
+h1::first-letter{
+    color:green;
+}
+p::selection{
+    color:#b92b27;
+}

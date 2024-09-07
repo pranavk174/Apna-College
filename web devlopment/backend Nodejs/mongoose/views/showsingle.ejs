@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+     <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+<body>
+   
+
+
+    
+  
+        <div class="font-bold">
+
+            <img height="300px" width="300px" src="<%= product.images %>" alt="image" name="images">
+            <h3>Id : <%= product.id %></h3>
+            <h2>Brand : <%= product.brand %></h2>
+            <h2>Title : <%= product.title %> </h2>
+            <p>Description : <%= product.description %> </p>
+            <h4>Discount : <%= product.discountPercentage%>% </h4>
+            <h2>Price : <%= product.price %> $ </h2>
+            <h4>Rating : <%= product.rating %></h4>
+
+           
+            
+           <div style="display:flex; gap:10px;">
+            <form method="get" action="/product/edit/<%=product.id%>" >
+                <button> Edit  </button>
+             </form>
+ 
+             <form method="get" action="/product/edit/<%=product.id%>" >
+                 <button>full change </button>
+              </form>
+ 
+              <form method="post" action="/product/delete/<%=product.id %>?_method=DELETE">
+                 <button>Delete User</button>
+              </form>
+           </div>
+            <hr>
+        </div>
+     
+</body>
+</html>

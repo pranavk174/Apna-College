@@ -1,0 +1,12 @@
+@keyframes moveimage{
+   from{
+        top:0;
+    }
+    to{
+        top:-50%;
+    }
+}
+.companyList{
+    animation : moveimage 10s infinite linear  ;
+
+}

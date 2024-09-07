@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>You are about to edit : <%= product.brand %> </h1>
+
+    <img src="https://fdn.gsmarena.com/imgroot/static/headers/makers/xiaomi-2024-1.jpg" alt="">
+   
+
+   <form method="post" action="/product/edit/<%= product.id %>?_method=PATCH" >
+        <label for="img">Image String :</label>
+        <input type="text"  style="width:400px" id="img" name="images" value="<%= product.images %>"><br>
+        <label for="ds"> Description :</label>
+        <textarea name="description" id="ds" rows="10" cols="30"><%= product.description %></textarea> <br>
+        <label for="p">Price :</label>
+        <input type="text" id="p" name="price" value="<%= product.price %>"> <br>
+        <label for="dp">Discount</label>
+        <input type="text" id="dp" name="discountPercentage" value="<%= product.discountPercentage %>">
+        <button>Submit Changes</button>
+    </form>
+
+    <form method="post" action="/product/change/<%= product.id %>?_method=PUT" >
+        <label for="img">Image String :</label>
+        <input type="text"  style="width:400px" id="img" name="images" value="<%= product.images %>"><br>
+        <label for="ds"> Description :</label>
+        <textarea name="description" id="ds" rows="10" cols="30"><%= product.description %></textarea> <br>
+        <label for="p">Price :</label>
+        <input type="text" id="p" name="price" value="<%= product.price %>"> <br>
+        <label for="dp">Discount</label>
+        <input type="text" id="dp" name="discountPercentage" value="<%= product.discountPercentage %>">
+
+        <button>Submit full Update</button>
+    </form>
+    
+
+</body>
+</html>

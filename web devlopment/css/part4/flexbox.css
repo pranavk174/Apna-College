@@ -1,0 +1,33 @@
+.d1{
+    height:300px;
+    width:60%;
+    margin:10px auto;
+    border:2px solid black;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    /* align-items:flex-end; */
+    /* flex-wrap:wrap; */
+align-content:flex-start;
+
+}
+#blue{
+    align-self:flex-end;
+    flex-basis:300px;
+    /* flex-grow:1; */
+    flex-shrink:1;
+}
+#yellow{
+    align-self:flex-end;
+    flex-basis:709px;
+    /* flex-grow:2; */
+    /* flex-shrink:3 */
+}
+.d1 div{
+    height:90px;
+    width:200px;
+    color:white;
+    text-align:center;
+    font-size:1.5em;
+}
+

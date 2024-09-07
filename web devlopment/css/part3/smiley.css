@@ -1,0 +1,43 @@
+.d1{
+    height: 300px;
+    width:300px;
+    border:2px solid black;
+    background:rgb(236, 160, 8);
+    border-radius:50%;
+    position:fixed;
+
+}
+#c1{
+    height:30px;
+    width:30px;
+    border:1px solid black;
+    border-radius:50%;
+    background:black;
+    display:inline-block;
+    position:relative;
+    top:100px;
+    left:80px;
+}
+#c2{
+    height:30px;
+    width:30px;
+    border:1px solid black;
+    border-radius:50%;
+    background:black;
+    display:inline-block;
+    position:relative;
+    top:100px;
+    left:160px;
+}
+#c3{
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    background:rgb(12, 6, 0);;
+    position:relative;
+    width:90px;
+    height:30px;
+    color:white;
+    top:180px;
+    left:110px;
+
+}

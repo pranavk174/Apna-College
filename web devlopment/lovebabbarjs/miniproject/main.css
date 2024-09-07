@@ -1,0 +1,68 @@
+@tailwind components;
+@tailwind utilities;
+@tailwind base;
+
+
+.grad {
+    background-image: radial-gradient(farthest-side at 100% 10%, red, rgb(54, 20, 38), black);
+    background-size: cover;
+
+  }
+
+  .brdr{
+    border-bottom:4px solid yellow;
+  }
+
+  /* .slider {
+    appearance: none;
+    width: 100%;
+    height: 0.70rem;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 1rem;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    background-repeat: no-repeat;
+    background-image:linear-gradient(rgb(12,59,240),rgb(39,240,255)); 
+}
+
+.slider::-webkit-slider-thumb {
+    position: relative;
+    z-index: 1;
+    appearance: none;
+    background-color: yellow;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 100ms ease-in;
+    box-shadow: 0px 0px 20px 0px rgba(236, 55, 121, 0.92);
+} */
+
+
+
+.slider {
+  appearance: none;
+  width: 100%;
+  height: 0.80rem;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 1rem;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgb(240, 38, 12), rgba(0, 0, 255, 0.831))
+}
+
+.slider::-webkit-slider-thumb {
+  position: relative;
+  z-index: 1;
+  appearance: none;
+  background-color: yellow;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 100ms ease-in;
+  box-shadow: 0px 0px 20px 0px rgba(236, 55, 121, 0.92);
+}

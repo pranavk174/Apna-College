@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Document</title>
+  </head>
+  <body class="flex-col">
+
+    <h1 class="font-bold justify-center">the database informations is</h1>  
+    <form class="border-2 w-[150px] h-[50px] flex justify-center bg-black text-white" action="/user/new" method="get">
+      <button>Add new user</button>
+    </form>
+    <form class="border-2 w-[150px] h-[50px] flex justify-center bg-black text-white" action="/user/delete" method="get">
+      <button>delete new user</button>
+    </form>
+    <table class="grid gap-4">
+      <tr >
+        <th class="border-2">ID</th>
+        <th class="border-2">Name</th>
+        <th class="border-2">Email</th>
+      </tr>
+      <% for (let result of results){ %>
+        <tr >
+            <td class="text-center border-2"><%= result.id %></td>
+            <td class="text-center border-2"><%= result.username %></td>
+            <td class="text-center border-2"><%= result.email %></td>
+           <td>
+            <form class="border-2" action="/user/<%=result.id%>/edit">
+              <button class="">edit user</button>
+            </form>
+           </td>
+        </tr>
+        <% } %>
+
+    </table>
+
+
+
+  </body>
+</html>

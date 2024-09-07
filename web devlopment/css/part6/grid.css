@@ -1,0 +1,42 @@
+.container{
+    height:400px;
+    width:600px;
+    background-color:black;
+    display:grid;
+   grid-template-rows:30px 500px 30px;
+   grid-template-columns:200px 400px;
+   gap:0px;
+
+   grid-template-areas:
+   "hd hd"
+   "sd mn"
+   "ft ft";
+    /* align-items:center; */
+}
+
+.item{
+   
+    background-color:green;
+    border:3px solid black;
+    /* text-align:center; */
+}
+#one{
+  grid-area:hd;
+  
+  
+}
+#two{
+   
+   grid-area:sd;
+  
+
+}
+#three{
+   
+   grid-area:mn;
+}
+#four{
+
+  grid-area:ft;
+   
+}

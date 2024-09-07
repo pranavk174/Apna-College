@@ -1,0 +1,18 @@
+<%- include("./includes/head.ejs") %>
+<body>
+    <h1>Dice Given value : <%=num %></h1>    <!--    ye "num" variable  js file k api se access kiya jaa rha h -->
+
+ <% if(num == 6){  %>    <!-- this tag is used for conditional expressions  -->
+
+ <h1> Nice , Roll dice again </h1>
+<% } 
+else{  %>
+
+    <h1> Now it's your opponent's turn</h1>
+<% } %>
+
+
+
+ 
+</body>
+</html>

@@ -1,0 +1,48 @@
+body{
+    background:grey;
+    display:flex; 
+    justify-content:center;
+    align-items:center; 
+    height:100vh;
+ 
+
+   
+}
+
+.container{
+    border:5px solid black;
+    display:flex; 
+    flex-direction:column;
+    justify-content:center;
+    align-items:center; 
+    align-self:center;
+
+}
+
+.content{
+    display:inline-flex;
+    justify-content:space-around;
+    align-items: center;
+    min-width:50px;
+
+}
+
+
+.b1{
+    font-size:2em;
+    /* size:20rem; */
+    height:3rem;
+    width:3rem;
+    margin:5px;
+}
+
+.b1:hover{
+background:black;
+transition:0.2s;
+color:white;
+}
+
+#h3{
+    font-size:2rem;
+    text-align:center;
+}

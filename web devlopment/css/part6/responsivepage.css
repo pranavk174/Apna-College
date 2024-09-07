@@ -1,0 +1,44 @@
+.md{
+
+    display:flex;
+    justify-content:space-around;
+    
+    /* flex-wrap:wrap; */
+}
+
+.cd1 , .cd2{
+    border:2px solid black;
+    border-radius:20px;
+    width:350px;
+    text-wrap: wrap;
+    padding:5px;
+    line-height: 1.2;
+    align-self:center;
+    transform:translateY(300deg);
+}
+
+.img{
+    height:12.5rem;
+    width:24.3em;
+    border-radius:25px;
+    padding:0.5em;
+}
+.photo{
+   display:flex;
+   justify-content:center;
+}
+body{
+    display:f
+}
+
+@media(max-width:600px){
+    .md{
+        display:flex;
+        flex-wrap:wrap;
+    }
+    #main{
+        display:flex;
+        flex-wrap:wrap;
+    }
+
+}

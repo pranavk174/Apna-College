@@ -1,0 +1,110 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+.main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-template-areas:
+    "hr hr hr hr"
+    "ip ip ip ip"
+    "dt btzero  btm btplus"
+    " btseven bteight btnine  btmd"
+    " btfour btfive btsix  btd "
+    "btone bttwo btthree btx"
+    "bks ac eq eq";
+  height: 500px;
+  width: 500px;
+  border-radius: 10px;
+  box-shadow: 3px 4px 20px black;
+  padding: 10px;
+  background-color: black;
+  margin: 5rem;
+}
+h1 {
+  height: 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 2.5rem;
+  grid-area: hr;
+  color: white;
+  justify-self: center;
+}
+h1:hover {
+  color: rgba(249, 0, 0, 0.43);
+  text-shadow: 2px 3px 10px yellow;
+}
+input {
+  height: 60px;
+  border-radius: 20px;
+  border: none;
+  grid-area: ip;
+  display: transparent;
+  font-size: 2.5rem;
+  padding: 1rem;
+  background-color: white;
+  color: black;
+}
+.box {
+  margin: 5px;
+  border: 2px solid black;
+  font-size: 1.5rem;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 3px 4px 5px black;
+}
+.box:active {
+  background-color: black;
+  color: white;
+  transition: 0.2s;
+}
+#one {
+  grid-area: btone;
+}
+#two {
+  grid-area: bttwo;
+}
+#three {
+  grid-area: btthree;
+}
+#four {
+  grid-area: btfour;
+}
+#five {
+  grid-area: btfive;
+}
+#six {
+  grid-area: btsix;
+}
+#seven {
+  grid-area: btseven;
+}
+#eight {
+  grid-area: bteight;
+}
+#nine {
+  grid-area: btnine;
+}
+#zero {
+  grid-area: btzero;
+}
+#divide {
+  grid-area: btd;
+}
+#bckspace {
+  grid-area: bks;
+}
+#clear {
+  grid-area: ac;
+}
+#equal {
+  grid-area: eq;
+}
+#modulo {
+  grid-area: btmd;
+}
+#dot {
+  grid-area: dt;
+}

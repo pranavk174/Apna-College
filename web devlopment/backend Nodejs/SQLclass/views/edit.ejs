@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit user</title>
+</head>
+<body>
+    <h1>you are about to edit this user : <%=person.email%> </h1>
+   <form method ="post" action="/user/<%=person.id%>?_method=PATCH">
+    <!-- <label for="email">email:</label>
+    <input  id="email" type="text" value=""><br> -->
+    <label for="username">username:</label>
+    <textarea id="username" type="text" name="username">   <%=person.username%> </textarea> <br>
+    <label for="password">Enter password:</label>
+    <input type="password" name="password">
+    <button>Submit</button>
+   </form>
+</body>
+</html>

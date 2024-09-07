@@ -1,0 +1,25 @@
+#p1{
+    height:200px;
+    width:70px;
+    border:2px solid black;
+
+}
+#c1,#c2,#c3{
+    height:50px;
+    width:50px;
+    border:2px solid black;
+    margin:10px;
+    border-radius:70px;
+}
+#c1{
+    background-color:red;
+
+}
+#c2{
+    background-color:yellow;
+
+}
+#c3{
+    background-color:green;
+
+}
